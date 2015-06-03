@@ -1,0 +1,10 @@
+{
+  "name": "Lion",
+  "version": "0.0.0",
+  "homepage": "https://github.com/naoh87/lion",
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "~3.7.3",
+    "kiwijs": "v1.3.0-release"
+  }
+}
