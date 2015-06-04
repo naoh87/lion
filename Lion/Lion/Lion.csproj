@@ -30,10 +30,14 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="test\test.ts" />
+    <TypeScriptCompile Include="typings\jasmine\jasmine.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
     <Content Include="package.json" />
+    <Content Include="tsd.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -43,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="libs\" />
-    <Folder Include="test\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
