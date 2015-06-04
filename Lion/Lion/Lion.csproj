@@ -26,9 +26,13 @@
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="karma.conf.js" />
+    <Content Include="libs\phaser.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="typings\p2.d.ts" />
+    <TypeScriptCompile Include="typings\phaser.comments.d.ts" />
+    <TypeScriptCompile Include="typings\pixi.comments.d.ts" />
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="test\test.ts" />
     <TypeScriptCompile Include="typings\jasmine\jasmine.d.ts" />
@@ -45,9 +49,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="libs\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
