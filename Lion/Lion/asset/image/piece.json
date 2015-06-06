@@ -1,0 +1,52 @@
+{"frames": {
+
+"chicken.png":
+{
+	"frame": {"x":632,"y":2,"w":154,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":154,"h":154},
+	"sourceSize": {"w":154,"h":154}
+},
+"chicken_big.png":
+{
+	"frame": {"x":2,"y":2,"w":156,"h":156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":156,"h":156},
+	"sourceSize": {"w":156,"h":156}
+},
+"elephant.png":
+{
+	"frame": {"x":160,"y":2,"w":156,"h":155},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":156,"h":155},
+	"sourceSize": {"w":156,"h":155}
+},
+"giraffe.png":
+{
+	"frame": {"x":318,"y":2,"w":155,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":154},
+	"sourceSize": {"w":155,"h":154}
+},
+"lion.png":
+{
+	"frame": {"x":475,"y":2,"w":155,"h":154},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":154},
+	"sourceSize": {"w":155,"h":154}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "piece.png",
+	"format": "RGBA8888",
+	"size": {"w":788,"h":160},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:367db921f17bc9dab8b7ab095df6a8db:0a81c32ac10ccd62fa172f9501c6e1a3:c2b9b1c73b60177cc0ceaca8ae3b789b$"
+}
+}
