@@ -1,27 +1,18 @@
-﻿class Greeter {
-    element: HTMLElement;
-    span: HTMLElement;
-    timerToken: number;
+﻿class SimpleGame {
 
-    constructor(element: HTMLElement) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
+    constructor() {
+        this.game = new Phaser.Game(800, 600, Phaser.AUTO, 'content', { create: this.create });
     }
 
-    start() {
-        this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
-    }
+    game: Phaser.Game;
 
-    stop() {
-        clearTimeout(this.timerToken);
+    create() {
+        var text = "Hello World!";
+        var style = { font: "65px Arial", fill: "#ff0000", align: "center" };
+        this.game.add.text(0, 0, text, style);
     }
 }
 
 window.onload = () => {
-    var el = document.getElementById('content');
-    var greeter = new Greeter(el);
-    greeter.start();
+    var game = new SimpleGame();
 };
