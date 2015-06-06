@@ -29,6 +29,7 @@
     <Content Include="libs\immutable.js" />
     <Content Include="libs\phaser.js" />
     <Content Include="libs\rx.lite.js" />
+    <Content Include="libs\tsmonad.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -41,6 +42,7 @@
     <TypeScriptCompile Include="test\test.ts" />
     <TypeScriptCompile Include="typings\jasmine\jasmine.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="typings\tsmonad.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
