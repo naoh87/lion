@@ -26,10 +26,15 @@
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="karma.conf.js" />
+    <Content Include="libs\immutable.js" />
     <Content Include="libs\phaser.js" />
+    <Content Include="libs\rx.lite.js" />
+    <Content Include="libs\tsmonad.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="src\immutable.d.ts" />
+    <TypeScriptCompile Include="typings\rx\rx-lite.d.ts" />
     <TypeScriptCompile Include="typings\p2.d.ts" />
     <TypeScriptCompile Include="typings\phaser.comments.d.ts" />
     <TypeScriptCompile Include="typings\pixi.comments.d.ts" />
@@ -37,6 +42,7 @@
     <TypeScriptCompile Include="test\test.ts" />
     <TypeScriptCompile Include="typings\jasmine\jasmine.d.ts" />
     <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="typings\tsmonad.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower.json" />
