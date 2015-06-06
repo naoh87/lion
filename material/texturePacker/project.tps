@@ -189,8 +189,9 @@
         <key>fileList</key>
         <array>
             <filename>../image/chicken.png</filename>
+            <filename>../image/chicken_big.png</filename>
             <filename>../image/elephant.png</filename>
-            <filename>../image/giraffia.png</filename>
+            <filename>../image/giraffe.png</filename>
             <filename>../image/lion.png</filename>
         </array>
         <key>ignoreFileList</key>
