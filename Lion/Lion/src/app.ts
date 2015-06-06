@@ -1,27 +1,29 @@
-﻿class Greeter {
-    element: HTMLElement;
-    span: HTMLElement;
-    timerToken: number;
+﻿module Castlevania {
 
-    constructor(element: HTMLElement) {
-        this.element = element;
-        this.element.innerHTML += "The time is: ";
-        this.span = document.createElement('span');
-        this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
+    export class Game extends Phaser.Game {
+
+        constructor() {
+
+            super(800, 600, Phaser.AUTO, 'content', null);
+
+            this.state.add('Boot', Boot, false);
+
+            this.state.start('Boot');
+
+        }
+
     }
 
-    start() {
-        this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
+    class Boot extends Phaser.State {
+        create() {
+            var text = "Hello Phaser";
+            var style = { font: "65px Arial", fill: "#ff0000", align: "center" };
+            this.game.add.text(0, 0, text, style);
+        }
     }
 
-    stop() {
-        clearTimeout(this.timerToken);
-    }
-}
+} 
 
 window.onload = () => {
-    var el = document.getElementById('content');
-    var greeter = new Greeter(el);
-    greeter.start();
+    new Castlevania.Game();
 };
