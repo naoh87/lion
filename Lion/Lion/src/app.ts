@@ -1,5 +1,4 @@
 ﻿module Castlevania {
-
     export class Game extends Phaser.Game {
 
         constructor() {
@@ -16,7 +15,10 @@
 
     class Boot extends Phaser.State {
         create() {
-            var text = "Hello Phaser";
+            var a = Immutable.List.of(1, 2)
+            var b = a.push(4);
+            
+            var text = "Hello Phaser\n" + a + ":\n" + b;
             var style = { font: "65px Arial", fill: "#ff0000", align: "center" };
             this.game.add.text(0, 0, text, style);
         }
