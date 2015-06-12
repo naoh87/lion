@@ -33,7 +33,7 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="src\immutable.d.ts" />
+    <TypeScriptCompile Include="typings\immutable.d.ts" />
     <TypeScriptCompile Include="typings\rx\rx-lite.d.ts" />
     <TypeScriptCompile Include="typings\p2.d.ts" />
     <TypeScriptCompile Include="typings\phaser.comments.d.ts" />
@@ -83,8 +83,9 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
